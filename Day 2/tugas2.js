@@ -1,7 +1,7 @@
 // Write a code to display the multiplication table of a given integer
 
 for (let index = 1; index <= 10; index++) {
-    console.log(`9 X ${index}`);
+    console.log(`9 X ${index} = ${9 * index}`);
 }
 
 
@@ -27,22 +27,33 @@ console.log(`${plainnum} → ${new Intl.NumberFormat('id-ID', { style: 'currency
 // Write a code to remove the first occurrence of a given “search string” from a string
 // string = “Hello world”, search string = “ell” → “Ho world”
 
-let kata = "Hello world";
-let chartoremove = "llo";
-console.log(`If the word "${chartoremove}" is erased from "${kata}", it'd be "${kata.replace( chartoremove , '')}".`);
+let kata = "Hello Hello world world";
+let chartoremove = "orl";
+let splitter = kata.split(" ");
+
+
+for (let i = 0; i <= splitter.length; i++) {
+    splitter[i] = splitter[i].replace(chartoremove, '')
+    break;
+}
+
+console.log(`If the first occurence of "${chartoremove}" is erased from "${kata}", it'd be "${splitter.join(" ")}".`);
+
+console.log(`Jika kata "${chartoremove}" dihapus dari "${kata}", maka ${kata.replace(/orl/, "")}`);
 
 // Write a code to capitalize the first letter of each word in a string
 // “hello world” → “Hello World”
 
-let kalimat = "this is awesome";
+let kalimat = "this is   awesome";
 let kalimatsplit = kalimat.split(" ");
 
 for (let index = 0; index < kalimatsplit.length; index++) {
     kalimatsplit[index] = kalimatsplit[index][0].toUpperCase() + kalimatsplit[index].substring(1);
-    
-}
 
+}
+console.log(kalimatsplit);
 console.log(kalimatsplit.join(" "));
+
 
 
 // Write a code to reverse a string.
@@ -51,4 +62,11 @@ let katarev = "laptop";
 let kearray = katarev.split("");
 let kereverse = kearray.reverse("");
 console.log(`Jika kata "${katarev}" dibalik, maka hasilnya adalah "${kereverse.join("")}".`);
+
+
+
+
+
+
+
 
