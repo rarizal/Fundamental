@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Noto+Sans+JP:wght@700&family=Permanent+Marker&display=swap");
+
+.exp {
+	font-family: "Noto Sans JP", sans-serif;
+	font-size: 55px;
+	letter-spacing: 1px;
+	color: white;
+	-webkit-text-stroke: 2px rgba(61, 195, 180, 0.6);
+	text-align: left;
+	padding-left: 10%;
+	padding-top: 3%;
+}
+
+.potr {
+	font-family: "Noto Sans JP", sans-serif;
+	font-size: 85px;
+	letter-spacing: 1px;
+	line-height: 70px;
+	color: transparent;
+	-webkit-text-stroke: 2px rgba(23, 217, 110, 0.6);
+	text-align: left;
+	padding-left: 10%;
+	padding-top: 3%;
+}
+.ungu {
+	-webkit-text-stroke: 2px rgba(101, 61, 195, 0.2) !important;
+}

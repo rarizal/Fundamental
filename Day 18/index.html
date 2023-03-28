@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Portfolio</title>
+		<link rel="stylesheet" type="text/css" href="./idontwritethis.css" />
+		<script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+		<style>
+			.body {
+				background-color: #f6f6f6;
+				background: #f6f6f6;
+			}
+			.mother {
+				/* width: 1920px;
+				height: 1080px; */
+				display: flex;
+				align-items: center;
+				width: 98vw;
+				height: 98vh;
+				background-color: #f6f6f6;
+			}
+			.motherchd {
+				display: flex;
+				justify-content: center;
+			}
+			/* unit 14.5vw */
+			.a {
+				display: flex;
+				flex-direction: column;
+				width: 29vw;
+				height: 47.5vw;
+				background-color: white;
+				border-radius: 20px;
+				margin-right: 2vw;
+				background: rgb(255, 255, 255);
+				background: linear-gradient(
+					180deg,
+					rgba(255, 255, 255, 1) 6%,
+					rgba(199, 245, 246, 1) 100%
+				);
+				/* background-image: url(./bgexp.jpeg); */
+			}
+			.b {
+				display: flex;
+				flex-direction: column;
+				width: 45.5vw;
+				height: 47.5vw;
+				/* background-color: rgb(23, 167, 33); */
+				border-radius: 20px;
+			}
+			.b1 {
+				display: flex;
+				flex-direction: row;
+				width: 45.5vw;
+				height: 31vw;
+				/* background-color: blanchedalmond; */
+				border-radius: 20px;
+				margin-bottom: 2vw;
+			}
+			.b1a {
+				width: 29vw;
+				height: 31vw;
+				/* background-color: cadetblue; */
+				border-radius: 20px;
+				margin-right: 2vw;
+				background-image: url("./photo.png");
+				background-size: cover;
+				padding-top: 45%;
+				/* background-repeat: no-repeat; */
+			}
+			.b1b {
+				display: flex;
+				flex-direction: column;
+				width: 14.5vw;
+				height: 31vw;
+				/* background-color: blue; */
+				border-radius: 20px;
+			}
+			.b1b1 {
+				width: 14.5vw;
+				height: 14.5vw;
+				/* background-color: lawngreen; */
+				border-radius: 20px;
+				margin-bottom: 2vw;
+				background-size: contain;
+				background-image: url(./giv.gif);
+				background-position: center;
+				background-blend-mode: soft-light;
+			}
+			.b1b2 {
+				width: 14.5vw;
+				height: 14.5vw;
+				background-color: white;
+				border-radius: 20px;
+			}
+			.b2 {
+				display: flex;
+				flex-direction: row;
+				width: 45.5vw;
+				height: 14.5vw;
+				/* background-color: aqua; */
+				border-radius: 20px;
+			}
+			.b2a {
+				width: 14.5vw;
+				height: 14.5vw;
+				/* background-color: crimson; */
+				border-radius: 20px;
+				margin-right: 2vw;
+			}
+			.b2b {
+				width: 29vw;
+				height: 14.5vw;
+				/* background-color: darkkhaki; */
+				border-radius: 20px;
+				background-color: white;
+			}
+			.b2btext {
+				font-family: "Permanent Marker", cursive;
+				text-align: left;
+				line-height: 70px;
+				font-size: 75px;
+				padding: 13% 5% 3% 5%;
+				-webkit-background-clip: text;
+				color: transparent;
+				background-image: url("./istockphoto-638820876-1024x1024.jpeg");
+			}
+			.c {
+				display: flex;
+				flex-direction: column;
+				width: 14.5vw;
+				height: 47.5vw;
+				/* background-color: rgb(62, 62, 5); */
+				border-radius: 20px;
+				margin-left: 2vw;
+			}
+			.c1 {
+				width: 14.5vw;
+				height: 31vw;
+				/* background-color: blueviolet; */
+				border-radius: 20px;
+				margin-bottom: 2vw;
+				/* background-image: url(./bgexp.jpeg); */
+				background: rgb(255, 255, 255);
+				background: linear-gradient(
+					0deg,
+					rgba(255, 255, 255, 1) 6%,
+					rgba(213, 199, 246, 1) 100%
+				);
+			}
+			.c2 {
+				width: 14.5vw;
+				height: 14.5vw;
+				/* background-color: brown; */
+				border-radius: 20px;
+			}
+			.bdr {
+				/* border: 2px solid rgba(128, 128, 128, 0.4);
+				border-radius: 20px; */
+				box-shadow: inset 0px 0px 0px 2px rgba(128, 128, 128, 0.2);
+				box-sizing: border-box;
+			}
+			.title {
+				font-size: smaller;
+				font-family: sans-serif;
+				color: rgba(128, 128, 128, 0.5);
+				text-align: center;
+			}
+			.minihdr {
+				font-family: sans-serif;
+				font-weight: 300;
+				font-size: 32px;
+				text-align: center;
+				color: black;
+			}
+			.expcont {
+				display: flex;
+				flex-direction: column;
+				width: 100%;
+				height: 100%;
+				justify-content: space-evenly;
+				align-items: center;
+				padding: 0 0 5% 0;
+			}
+			.expitem {
+				/* background-color: antiquewhite; */
+				text-align: left;
+				width: 75%;
+				padding: 2%;
+				min-height: 14%;
+				border-radius: 15px;
+				background: rgba(255, 255, 255, 0.2);
+				border-radius: 16px;
+				box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+				backdrop-filter: blur(5px);
+				-webkit-backdrop-filter: blur(5px);
+				border: 1px solid rgba(255, 255, 255, 0.3);
+			}
+			/* .expitem span {
+				display: block;
+			} */
+			span {
+				display: block;
+			}
+			.exptipe {
+				font-family: sans-serif;
+				font-size: small;
+				color: rgb(53, 70, 27);
+				padding: 5px 10px;
+				border-radius: 15px;
+				max-width: fit-content;
+				background-color: rgba(82, 238, 47, 0.3);
+			}
+			.exptitle {
+				font-family: "Inter", sans-serif;
+				font-size: 14px;
+				line-height: 1.5;
+				padding: 13px 0 7px 10px;
+				opacity: 0.7;
+			}
+			.expdetail {
+				font-family: sans-serif;
+				font-size: 12px;
+				opacity: 0.7;
+				color: grey;
+				font-style: italic;
+				padding: 0 7px;
+			}
+			.red {
+				color: rgb(148, 39, 25) !important;
+				background-color: rgba(238, 47, 47, 0.3) !important;
+			}
+			.orange {
+				color: rgb(148, 134, 25) !important;
+				background-color: rgba(238, 212, 47, 0.3) !important;
+			}
+			.purple {
+				color: rgb(25, 50, 148) !important;
+				background-color: rgba(146, 47, 238, 0.3) !important;
+			}
+			progress {
+				accent-color: rgb(103, 69, 214);
+				height: 20px;
+			}
+			.skill {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-evenly;
+				align-items: center;
+				height: 80%;
+				/* background-color: rgba(138, 43, 226, 0.5); */
+			}
+			.skillitem {
+				/* background-color: aqua; */
+				background: rgba(255, 255, 255, 0.2);
+				border-radius: 60px;
+				box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+				backdrop-filter: blur(5px);
+				-webkit-backdrop-filter: blur(5px);
+				border: 1px solid rgba(255, 255, 255, 0.3);
+				width: 80%;
+				padding: 5px 0;
+			}
+			.skilltitle {
+				background-color: rgba(255, 238, 252, 0.3);
+				color: rgb(4, 71, 61);
+				font-size: 13px;
+				padding: 2px 6px;
+				text-align: left;
+				font-family: sans-serif;
+				letter-spacing: 1px;
+				width: fit-content;
+			}
+		</style>
+	</head>
+	<body>
+		<center>
+			<div class="mother">
+				<div class="mother motherchd">
+					<div class="a bdr">
+						<div class="exp">Experience</div>
+						<div class="expcont">
+							<div class="expitem">
+								<span class="exptipe">Web Development</span>
+								<span class="exptitle"
+									>AROMA: Indonesian delights made of
+									preservarence and love passed through
+									generations since 1912.
+								</span>
+								<span class="expdetail"
+									>August 2023 &#8226; Design & Build</span
+								>
+							</div>
+							<div class="expitem">
+								<span class="exptipe red">Web Design</span>
+								<span class="exptitle"
+									>EIGER: Indonesian delights made of
+									preservarence and love passed through
+									generations since 1912.
+								</span>
+								<span class="expdetail"
+									>December 2022 &#8226; Concept Design</span
+								>
+							</div>
+							<div class="expitem">
+								<span class="exptipe orange">Mobile App</span>
+								<span class="exptitle"
+									>DOMPETKU: Indonesian delights made of
+									preservarence and love passed through
+									generations since 1912.
+								</span>
+								<span class="expdetail"
+									>July 2021 &#8226; Build & Maintain</span
+								>
+							</div>
+							<div class="expitem">
+								<span class="exptipe purple"
+									>Quality Assurance</span
+								>
+								<span class="exptitle"
+									>HONDA: Indonesian delights made of
+									preservarence and love passed through
+									generations since 1912.
+								</span>
+								<span class="expdetail"
+									>January 2021 &#8226; Manual & Automated
+									Testing</span
+								>
+							</div>
+						</div>
+					</div>
+					<div class="b">
+						<div class="b1">
+							<div class="b1a bdr">
+								<span class="potr">Hi,</span
+								><span class="potr">I'm Rizal.</span>
+							</div>
+							<div class="b1b">
+								<div class="b1b1 bdr"></div>
+								<div class="b1b2 bdr">
+									<br /><br />
+									<span class="title">HIRE ME</span
+									><br /><br /><br />
+									<span class="minihdr">Let's Build!</span>
+									<br /><br />
+									<lord-icon
+										src="https://cdn.lordicon.com/zmkotitn.json"
+										trigger="hover"
+										style="width: 50px; height: 50px"
+									>
+									</lord-icon>
+								</div>
+							</div>
+						</div>
+						<div class="b2">
+							<div class="b2a bdr">Socials</div>
+							<div class="b2b bdr">
+								<div class="b2btext">
+									WEB <br />
+									DEVELOPER
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="c">
+						<div class="c1 bdr">
+							<div class="exp ungu">Skills</div>
+							<div class="skill">
+								<div class="skillitem">
+									<span class="skilltitle">HTML</span>
+									<progress value="75" max="100">
+										75%
+									</progress>
+								</div>
+								<div class="skillitem">
+									<span class="skilltitle">CSS</span>
+									<progress value="60" max="100">
+										60%
+									</progress>
+								</div>
+								<div class="skillitem">
+									<span class="skilltitle">JavaScript</span>
+									<progress value="35" max="100">
+										35%
+									</progress>
+								</div>
+								<div class="skillitem">
+									<span class="skilltitle">React</span>
+									<progress value="2" max="100">2%</progress>
+								</div>
+								<div class="skillitem">
+									<span class="skilltitle">Photoshop</span>
+									<progress value="65" max="100">
+										65%
+									</progress>
+								</div>
+							</div>
+						</div>
+						<div class="c2 bdr">Blog</div>
+					</div>
+				</div>
+			</div>
+		</center>
+	</body>
+</html>
