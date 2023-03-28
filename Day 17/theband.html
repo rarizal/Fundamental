@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>The Band</title>
+		<style>
+			* {
+				margin: 0;
+			}
+			.row {
+				display: flex;
+				flex-direction: row;
+				width: 100vw;
+			}
+			.bar {
+				background-color: black;
+			}
+			.nav {
+				display: flex;
+				flex-direction: row;
+				list-style-type: none;
+				justify-content: space-evenly;
+				max-width: 30%;
+				font-family: sans-serif;
+			}
+			.menus {
+				min-width: 10px;
+				padding: 10px 7px;
+				color: rgb(236, 235, 234);
+				background-color: black;
+				transition: 0.5s;
+			}
+			.menus:hover {
+				background-color: rgb(215, 215, 214);
+				color: rgb(33, 33, 33);
+			}
+			.image {
+				width: 100%;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- Navigation Bar -->
+		<div class="bar">
+			<ul class="nav">
+				<li class="menus">Home</li>
+				<li class="menus">About</li>
+				<li class="menus">Members</li>
+				<li class="menus">Contact</li>
+			</ul>
+		</div>
+
+		<!-- Image -->
+		<div class="image">
+			<img
+				src="https://www.w3schools.com/w3css/img_la.jpg"
+				width="100%"
+				alt=""
+			/>
+		</div>
+
+		<!-- Members -->
+		<div></div>
+	</body>
+</html>

@@ -8,11 +8,18 @@
 	</head>
 	<body></body>
 	<script>
+		      class Produk(nama, qty, harga) {
+		          this.nama = nama;
+		          this.qty=qty;
+		          this.harga=harga;
+		      }
+
+
 		let keranjang = [];
 		let menu = prompt(`
-        1. Menu
-        2. Keranjang
-        3. Exit`);
+		      1. Menu
+		      2. Keranjang
+		      3. Exit`);
 
 		switch (menu) {
 			case 1:
